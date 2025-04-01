@@ -10,7 +10,9 @@ impl ConsoleColor {
     pub const G: &'static str = "\x1b[32m";
     pub const B: &'static str = "\x1b[34m";
     pub const Y: &'static str = "\x1b[33m";
+    pub const P: &'static str = "\x1b[35m";
     pub const W: &'static str = "\x1b[37m";
+    pub const GR: &'static str = "\x1b[90m";
 
     pub fn format_str(string: &str, color: &str) -> String {
         format!("{0}{1}{2}", color, string, ConsoleColor::RESET)
