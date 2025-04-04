@@ -54,6 +54,6 @@ fn run(filepath: Option<String>) -> io::Result<()> {
     Console::prompt_info("Verbose - Reading inputted file...");
 
     let file_contents = fs::read_to_string(&filepath)?;
-
+    // send that mfer
     Ok(())
 }
