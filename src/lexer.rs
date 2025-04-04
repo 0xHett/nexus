@@ -1,3 +1,6 @@
+use std::iter::Peekable;
+use std::str::Chars;
+
 pub struct Lexer<'a> {
     input: Peekable<Chars<'a>>,
     pub line: usize,
