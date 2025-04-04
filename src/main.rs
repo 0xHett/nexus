@@ -1,11 +1,13 @@
 #[allow(dead_code)]
 mod console;
+mod lexer;
 
 use std::fs;
 use std::io;
 use std::path::Path;
 use std::env;
 use console::Console;
+use lexer::*;
 
 /// main() is the entry point for the compiler, it simply checks the environment's args for the
 /// file(s) and compiler flags.
